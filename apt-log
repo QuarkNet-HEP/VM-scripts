@@ -6,6 +6,7 @@ if [ -d /home/quarkcat ]; then
     user=quarkcat
 else
     user=$SUDO_USER
+fi
 
 logFile=/home/$user/.apt.log
 
