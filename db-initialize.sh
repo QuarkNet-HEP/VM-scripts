@@ -6,7 +6,7 @@
 # Place the apt-log scripts
 curl -o /usr/local/sbin/apt-get-log https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/main/apt-get-log
 
-curl -o /usr/local/sbin/apt-get-log https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/main/apt-log
+curl -o /usr/local/sbin/apt-log https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/main/apt-log
 
 chown root:root /usr/local/sbin/{apt-log,apt-get-log}
 chmod 744 /usr/local/sbin/{apt-log,apt-get-log}
