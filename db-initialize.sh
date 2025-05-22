@@ -12,7 +12,7 @@ chown root:root /usr/local/sbin/{apt-log,apt-get-log}
 chmod 744 /usr/local/sbin/{apt-log,apt-get-log}
 
 # Alias the apt-log scripts to apt/apt-get system-wide
-cat <<EOF >> /tmp/bashrctest/addend.txt
+cat <<EOF >> /etc/bash.bashrc
 
 # Added $(date)
 # The extra space in the following prompts Bash to check the next value for
