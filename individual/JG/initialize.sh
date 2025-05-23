@@ -10,3 +10,5 @@ cat << EOF >> /home/$user/.bash_aliases
 alias ls='ls -Alh'
 EOF
 
+# Activate the alias
+source /home/$user/.bash_aliases
