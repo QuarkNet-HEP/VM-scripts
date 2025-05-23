@@ -1,1 +1,2 @@
-
+This folder is for configuration scripts personalized for each sysadmin.
+Typically these should affect only config files within the user's home directory.
