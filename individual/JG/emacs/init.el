@@ -1,5 +1,5 @@
 ;; After altering this file, M-x load-file RET ~/.emacs in open buffers to    
-load changes.                                                                 
+;; load changes.                                                                 
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.                                 
