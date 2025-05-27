@@ -6,12 +6,10 @@
 # $ sudo ./apt-log-init.sh
 
 # Download and place the apt-log scripts
-curl -o /usr/local/sbin/apt-log https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/main/apt-log
+curl -o /usr/local/sbin/apt-log https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/apt-log-single/apt-log-files/apt-log
 
-curl -o /usr/local/sbin/apt-get-log https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/main/apt-get-log
-
-chown root:root /usr/local/sbin/{apt-log,apt-get-log}
-chmod 744 /usr/local/sbin/{apt-log,apt-get-log}
+chown root:root /usr/local/sbin/apt-log
+chmod 744 /usr/local/sbin/apt-log
 
 # Alias the apt-log scripts to apt/apt-get system-wide
 cat <<EOF >> /etc/bash.bashrc
@@ -21,7 +19,7 @@ cat <<EOF >> /etc/bash.bashrc
 # alias expansion, thus allowing aliases to be passed through to 'sudo':
 alias sudo='sudo '
 alias apt='/usr/local/sbin/apt-log'
-alias apt-get='/usr/local/sbin/apt-get-log'
+alias apt-get='/usr/local/sbin/apt-log'
 EOF
 
 # Use `source` to activate the aliases
