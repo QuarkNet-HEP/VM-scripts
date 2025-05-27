@@ -12,3 +12,9 @@ sudo a2enmod proxy_ajp
 sudo a2enmod ssl
 sudo a2enmod rewrite
 sudo a2enmod headers
+
+# Disable the default site                                                    
+sudo a2dissite 000-default.conf
+
+# Enable the e-Labs                                                           
+sudo a2ensite elabs.conf
