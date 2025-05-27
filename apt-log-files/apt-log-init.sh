@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # To be run as root on a new Ubuntu database VM.
-# $ curl -o apt-log-init.sh https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/main/apt-log-init.sh
+# $ curl -o apt-log-init.sh https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/apt-log-single/apt-log-files/apt-log-init.sh
 # $ sudo chmod 744 apt-log-init.sh
 # $ sudo ./apt-log-init.sh
 
