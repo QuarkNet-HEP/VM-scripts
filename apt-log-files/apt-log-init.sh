@@ -28,4 +28,7 @@ source /etc/bash.bashrc
 
 # On Ubuntu 24.04, the above removes color from the prompt.
 # Restore it by re-sourcing the user's `.bashrc`, which sets the color.
-source /home/$SUDO_USER/.bashrc
+# `~/.bashrc` does not exist by default on Ubuntu 24.04 Desktop.
+if [ -f /home/$SUDO_USER/.bashrc ]; then 
+    source /home/$SUDO_USER/.bashrc;
+fi
