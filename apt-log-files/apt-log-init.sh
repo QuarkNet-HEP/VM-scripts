@@ -6,7 +6,8 @@
 # $ sudo ./apt-log-init.sh
 
 # Download and place the apt-log scripts
-curl -o /usr/local/sbin/apt-log https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/main/apt-log-files/apt-log
+#curl -o /usr/local/sbin/apt-log https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/main/apt-log-files/apt-log
+wget -O /usr/local/sbin/apt-log https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/main/apt-log-files/apt-log
 
 chown root:root /usr/local/sbin/apt-log
 chmod 744 /usr/local/sbin/apt-log
