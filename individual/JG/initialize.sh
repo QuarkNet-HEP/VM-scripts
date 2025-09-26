@@ -3,6 +3,8 @@
 # $ curl -o initialize.sh https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/main/individual/JG/initialize.sh
 # $ sudo chmod 744 initialize.sh
 # $ ./initialize.sh && source ~/.bash_aliases
+# One-liner to download and implement:
+# sudo curl -o initialize.sh https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/main/individual/JG/initialize.sh && sudo chmod 744 initialize.sh && sudo chown $USER:$(sudo id -gn $USER) initialize.sh && ./initialize.sh && source ~/.bash_aliases && rm initialize.sh
 
 # For the time being, this doesn't need 'sudo'.
 #user=$SUDO_USER
@@ -15,10 +17,6 @@ touch /home/$user/.bash_aliases
 cat << EOF >> /home/$user/.bash_aliases
 alias ls='ls -Alh'
 EOF
-
-# Activate the alias only if it's needed for the current script.
-# This has no effect on the calling shell, and aliases aren't expanded in scripts.
-#source /home/$user/.bash_aliases
 
 # Make Emacs the editor for `sudoedit` and fix journalctl's junk
 cat << EOF >> /home/$user/.profile
