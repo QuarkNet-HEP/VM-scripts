@@ -1,3 +1,9 @@
-$ curl -o apt-log-init.sh https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/apt-log-single/apt-log-files/apt-log-init.sh
-$ sudo chmod 744 apt-log-init.sh
-$ sudo ./apt-log-init.sh
+To implement these with a single command, use
+
+  sudo curl -o apt-log-init.sh https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/main/apt-log-files/apt-log-init.sh && sudo chmod 744 apt-log-init.sh && sudo bash -c 'source ./apt-log-init.sh' && sudo rm ./apt-log-init.sh && source /etc/bash.bashrc && source ~/.bashrc
+
+or
+
+  sudo wget -O apt-log-init.sh https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/main/apt-log-files/apt-log-init.sh && sudo chmod 744 apt-log-init.sh && sudo bash -c 'source ./apt-log-init.sh' && sudo rm ./apt-log-init.sh && source /etc/bash.bashrc && source ~/.bashrc
+
+according to preference or availability of 'curl' and 'wget'.
