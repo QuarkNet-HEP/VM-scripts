@@ -20,13 +20,3 @@ alias sudo='sudo '
 alias apt='/usr/local/sbin/apt-log'
 alias apt-get='/usr/local/sbin/apt-log'
 EOF
-
-# Use `source` to activate the aliases
-source /etc/bash.bashrc
-
-# On Ubuntu 24.04, the above removes color from the prompt.
-# Restore it by re-sourcing the user's `.bashrc`, which sets the color.
-# `~/.bashrc` does not exist by default on Ubuntu 24.04 Desktop.
-if [ -f /home/$SUDO_USER/.bashrc ]; then 
-    source /home/$SUDO_USER/.bashrc;
-fi
