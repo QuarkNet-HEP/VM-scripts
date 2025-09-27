@@ -2,7 +2,9 @@
 
 # To be run as root on a new Ubuntu database VM.
 # One-liner to retrieve and implement this script:
-# sudo curl -o apt-log-init.sh https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/main/apt-log-files/apt-log-init.sh && sudo chmod 744 apt-log-init.sh && sudo bash -c 'source ./apt-log-init.sh' && sudo rm ./apt-log-init.sh && source /etc/bash.bashrc && source ~/.bashrc
+#   sudo curl -o apt-log-init.sh https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/main/apt-log-files/apt-log-init.sh && sudo chmod 744 apt-log-init.sh && sudo bash -c 'source ./apt-log-init.sh' && sudo rm ./apt-log-init.sh && source /etc/bash.bashrc && source ~/.bashrc
+# or
+#   sudo wget -O apt-log-init.sh https://raw.githubusercontent.com/QuarkNet-HEP/VM-scripts/refs/heads/main/apt-log-files/apt-log-init.sh && sudo chmod 744 apt-log-init.sh && sudo bash -c 'source ./apt-log-init.sh' && sudo rm ./apt-log-init.sh && source /etc/bash.bashrc && source ~/.bashrc
 
 # Download and place the apt-log scripts.
 # Use `wget` if it's available, else `curl`.
