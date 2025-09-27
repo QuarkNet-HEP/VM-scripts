@@ -13,9 +13,10 @@ user=$USER
 # Create the `~/.bash_aliases` file
 touch /home/$user/.bash_aliases
 
-# Add the `ls` alias
+# Add the custom aliases
 cat << EOF >> /home/$user/.bash_aliases
 alias ls='ls -Alh'
+alias status='systemctl status --no-pager -l'
 EOF
 
 # Make Emacs the editor for `sudoedit` and fix journalctl's junk
