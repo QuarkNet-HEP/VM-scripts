@@ -1,9 +1,12 @@
 #!/bin/bash
 
-# If `/home/quarkcat/` exists on this system, store the log there.
+# If a 'quarkcat' (e-Labs) or 'quarknet' (other VM) user exists on
+# this system, store the log in its home folder.
 # Otherwise, use $SUDO_USER to use the calling user's home folder.
 if [ -d /home/quarkcat ]; then
     user=quarkcat
+elif [ -d /home/quarknet ]; then
+    user=quarknet
 else
     user=$SUDO_USER
 fi
